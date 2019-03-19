@@ -19,7 +19,10 @@ import { PromotionService } from './services/promotion.service'
 import { LeaderService } from './services/leader.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input'
+import { MatCheckboxModule } from '@angular/material/checkbox'
+import { FormsModule } from '@angular/forms'
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -44,6 +47,10 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     MatGridListModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
     MatCardModule,
     MatButtonModule,
     MatListModule,
